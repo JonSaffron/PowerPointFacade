@@ -1,0 +1,19 @@
+﻿<!-- Use <VBRuntime>Default</VBRuntime> option - https://github.com/dotnet/roslyn/issues/28021 -->
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>PowerPointFacade</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <OptionStrict>Off</OptionStrict>
+    <VBRuntime>Default</VBRuntime>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Jon Saffron</Authors>
+    <Company>J Saffron Consulting Ltd</Company>
+    <Product>PowerPointFacade</Product>
+    <Description>A basic facade for Microsoft PowerPoint.</Description>
+    <PackageReleaseNotes>I originally wrote this for a project some years ago. It doesn't cover everything that can be done with PowerPoint, but it does cover a lot of the essentials. Other ways of automating PowerPoint are available!</PackageReleaseNotes>
+    <Copyright>Jon Saffron 2007-2019</Copyright>
+  </PropertyGroup>
+
+</Project>
