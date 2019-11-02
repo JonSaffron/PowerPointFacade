@@ -6,7 +6,7 @@ Public Class Table2
 
         Dim app As Application = New Application(Me._table.Application)
         Dim applicationVersion As Decimal = CDec(app.Version)
-        If applicationVersion < 12 Then Throw New ApplicationException("Cannot instantiate the Table2 class against version " & applicationVersion & " of PowerPoint.")
+        If applicationVersion < 12 Then Throw New InvalidOperationException("Cannot instantiate the Table2 class against version " & applicationVersion & " of PowerPoint.")
     End Sub
 
     Public Property FirstCol As Boolean

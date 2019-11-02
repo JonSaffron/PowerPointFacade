@@ -6,12 +6,12 @@ Public Class Application
             Dim typePowerPoint As Type = Type.GetTypeFromProgID("PowerPoint.Application")
             Me._app = Activator.CreateInstance(typePowerPoint)
         Catch ex As Exception
-            Throw New ApplicationException("It was not possible to start PowerPoint - " & ex.Message, ex)
+            Throw New InvalidOperationException("It was not possible to start PowerPoint - " & ex.Message, ex)
         End Try
 
         If CDec(Me.Version) < 10 Then
             Me._app = Nothing
-            Throw New ApplicationException("The version of PowerPoint installed is too early to be supported.")
+            Throw New InvalidOperationException("The version of PowerPoint installed is too early to be supported.")
         End If
     End Sub
 
